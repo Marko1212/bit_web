@@ -59,20 +59,20 @@ p.font3 {
   text-align: center;
 }
 
-ul.listOfLinks {
-  color: rgb(128, 0, 49);
-  text-shadow: 15px 15px 15px rgba(169, 197, 46, 1);
+ul li{
+  color: yellowgreen;
+  text-shadow: 25px 25px 15px rgba(169, 197, 46, 1);
 }
 
-.listOfLinks a:link {
+ul li a:link {
   color: red;
 }
-.listOfLinks a:visited {
+ul li a:visited {
   color: black;
 }
-.listOfLinks a:hover {
+ul li a:hover {
   color: green;
 }
-.listOfLinks a:active {
+ul li a:active {
   color: blue;
 }
