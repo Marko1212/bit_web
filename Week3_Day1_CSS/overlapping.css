@@ -1,3 +1,4 @@
+
 div {
     width: 200px;
     height: 200px;
@@ -27,3 +28,25 @@ div {
     right: 200px;
 }
 
+.div4{
+    background-color: orangered;
+    z-index: 1;
+    right:0px;
+    position: relative;
+    
+}
+.div5 {
+    background-color: orchid;
+    z-index: 2;
+    position: relative;
+    right: 100px;
+    top: 100px;
+ 
+}
+.div6 {
+    background-color: palegreen;
+    z-index: 3;
+    position: relative;
+    top: 200px;
+    right: 200px;
+}
