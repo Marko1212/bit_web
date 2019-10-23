@@ -8,6 +8,7 @@ body {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 300px;
 }
 
 
@@ -19,6 +20,15 @@ body {
     color: white;
     height: 50px;
   
+}
+
+.cf:before, .cf:after{
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
 }
 
 #nav ul li {
@@ -98,17 +108,20 @@ ul > li {
 
 }
 
-.footer{
+.foot{
     width: 100%;
-    height: 60px;
+    height: 40px;
     background-color: #2d3e50;
     color: white;
-    font-size: 13px;
-    clear: both;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
 }
 
-.footer p {
+.foot p {
     position: absolute;
     left: 200px;
+    top: 10px;
 }
 
