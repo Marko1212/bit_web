@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
 }
+
 #veliki{
     padding-bottom: 300px;
 }
@@ -34,7 +35,7 @@
 }
 #main {
     padding-top: 2px; 
-    width: 960px;   
+    width: 960px;
 }
 #malodesno{
     float: right;
