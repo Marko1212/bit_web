@@ -18,12 +18,12 @@ main{
 }
 
 
-header:before, header:after{
+.cf:before, .cf:after{
     content: "";
     display: table;
 }
 
-header:after {
+.cf:after {
     clear: both;
 }
 header {
@@ -46,7 +46,7 @@ section {
 section img{
     width: 960px;
 }
-aside{
+aside {
     float: right;
     background: #ffbe00;
     width: 280px;
