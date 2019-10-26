@@ -294,8 +294,8 @@ iframe {
 
      height: 50px;
      width: 20%;
-     padding: 13px 0px;
-     text-indent: 13px;
+     padding: 13px 13px;
+     box-sizing: border-box;
 
     }
 
@@ -316,11 +316,11 @@ iframe {
 
 #mytextarea {
 
-width: 63%;
+width: 63.5%;
 margin-top: 30px;
 height: 300px;
-padding: 13px 0px;
-text-indent: 13px;
+padding: 13px 13px;
+box-sizing: border-box;
 }
 
 #buttoncontainer {
@@ -348,7 +348,7 @@ footer{
 
 #navigation {
 
-    width: 24%;
+    width: 37%;
     padding-top: 0px;
     margin: 40px auto;
 }
