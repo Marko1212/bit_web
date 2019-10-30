@@ -340,39 +340,42 @@ box-sizing: border-box;
 
 }
 
+
 footer{
     background-color: #464040;
-    height: 180px;
+
     color: white;
+    text-align: center;
 }
 
 #navigation {
 
-    width: 42%;
-    padding-top: 0px;
-    margin: 40px auto;
-}
 
+    padding-top: 0px;
+    margin: 0px auto;
+    text-align: center;
+}
 
 footer nav ul {
     list-style-type: none;
     padding: 0px;
-    margin: 50px 0px 20px 30px;
-
-
+    margin: 50px auto 20px auto;
+    text-align: center;
+    display: inline-block;
 }
 
 footer nav ul li {
     list-style-type: none;
     float: left;
     padding-left: 25px;
+    text-align: center;
 
 }
 
 .copyright {
 
     text-align: center;
-    margin: 30px auto 0 auto;
+    margin: 0px auto 30px auto;
 }
 
 /* RESPONSIVE */
