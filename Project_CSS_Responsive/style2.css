@@ -3,404 +3,204 @@
     src: url(fonts/Roboto-Regular.ttf);
 }
 
-.cf:before, .cf:after{
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cf:after{
     content:"";
+    clear: both;
     display: table;
 }
-.cf:after{
-    clear: both;
-}
-body{
-    width: 100%;
-    font-family: "Roboto-Regular";
-}
 
-header{
-    background-image: url("./pictures/banner3.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 900px;
-
-}
-header h2{
-    float: left;
-    color: white;
-    margin-left: 4%;
-}
-header h2 span{
-    color: orange;
-    border-style: solid;
-    border-width: 1px 0 1px 1px;
-    border-color: white;
-}
-
-#headMain {
-    color: white;
-    box-sizing: border-box;
-    width: 100%;
+#logo {
+    font-weight: bold;
     position: absolute;
-    top: 50%;
-    font-size: 47px;
-    text-align: center;
-    
-}
-#headMain p{
-    margin: 0;
-
-}
-
-header .logo {
-    float: left;
-    width: 60px;
-}
-
-header nav {
-    float: right;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0px 44.31px 0 0;
-}
-
-header nav ul li {
-    float: left;
-    padding: 13px;
-    color: #fff;
-}
-
-#blueBox {
-
-    text-align: center;
-    font-size: 15px;
-    border-radius: 15px;
-    background-color: rgb(42, 154, 228);
-    padding: 10px;
+    top: 30px;
+    left: 30px;
+    font-size: 40px;
     color: white;
+    z-index: 3;
+}
+
+#logo span {
+    color: orange;
+    border: 3px solid white;
+    border-right: none;
+    padding: 0px 0px 0px 5px;
+    margin-right: 10px;
+    
+}
+
+#menu {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    z-index: 2;
+}
+
+#menu ul{
+    color: white;
+    list-style: none;
+}
+
+.menu_item {
+    display: inline-block;
+    padding: 15px;
+}
+
+#menu a {
     text-decoration: none;
+    color: white;
 }
 
-.main1{
-    float: left;
-    width: 31%;
-    padding: 10px;
-    
-}
-
-.main1 img{
-    display: block;
-    width: 100%;
-    margin-top: 21.28px;
-}
-
-.main1 h4{
-    color: #76b7ec;
-    
-}
-.main1 ul{
-    list-style-image: url(./pictures/arrow_bullet.png); 
-}
-
-main{
+#banner {
     position: relative;
-    width: 100%;
-    left: 0px;
-    top: 0px;
-}
-.razd {
-    position: relative;
-    left: 15%;
-    padding-top: 20px;
+    margin-bottom: 3%;
 }
 
-main h3{
-    margin: 0 auto;
+#banner img {
+    width: 100%;
+    z-index: 1;
+}
+
+#banner p {
+    box-sizing: border-box;
+    padding: 0 10%;
+    position: absolute;
+    top: 40%;
     text-align: center;
-    padding-top: 5px;
+    width: 100%;
+    font-size: 51px;
+    color: white;
 }
 
-.razd {
-    width: 70%;
-    height: 70px;
-    line-height: 70px;
-    font-size: 20px;
+#banner a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,0);
+    top: 70%;
+    z-index: 4;
+    border: 1px solid #1c70b1;
+    padding: 10px 30px 10px 30px;
+    background-color: #1c70b1;
+    border-radius: 20px;
+}
+
+.separator {
+    width: 100%;
+    line-height: 30px;
+    font-size: 40px;
     text-align: center;
     position: relative;
-    margin: 10px 0px;
-    font-family: sans-serif;
+    margin: 30px 0px;
 }
-.razd hr{
+
+.separator hr {
     width: 25%;
-    margin: auto;
+    margin: 25px auto;
     border: none;
     background-color: black;
     height: 2px;
 }
-.razd::before {
-    content: "";
-    height: 8px;
-    width: 8px;
+
+.separator::before{
+    content:"";
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
     position: absolute;
-    bottom: -17px;
     left: 50%;
-    transform: rotate(45deg) translate(-50%, 0% );
+    bottom: 0%;
+    transform: translate(-50%,50%) rotate(45deg);
     background-color: white;
     border: 2px solid black;
 }
 
-.checked {
-    color: orange;
+#wwa {
+    width: 70%;
+    margin: auto auto 5% auto;
 }
 
-
-#firstUnder{
-
-    width: 75%;
-    margin: 0px auto;
-}
-
-.main2 {
-    float: left;
-    width: 30%;
-    background-color: #76b7ec;
-    color: white;
-    margin: 10px;
-    box-sizing: border-box;
-    padding: 35px;
-}
-
-#secondUnder{
-    width: 75%;
-    margin-left: 15%;
-    margin-top: 30px;
-}
-
-
-#secondUnder ul {
-
-    list-style-type: none;
-    padding: 0;
-    background-color: #76b7ec;
-} 
-
-#secondUnder ul li{
-    float: left;
-    color: rgb(0, 0, 0);
-    width: 30%;
-
-}
-
-.image{
-    border-radius: 50px;
-    width: 90%;
-}
-
-.stars{
-    width: 90%;
-}
-
-
-.contactPage li{
+.text {
+    width: 32%;
     float: left;
 }
 
-li#contact{
-    background-color: rgb(39, 216, 134);
-    width: 25%;
-    color: white;
-    text-align: center;
-    padding: 50px 45px;
-    box-sizing: border-box;
+.text h3 {
+
+    font-size: 23px;
+    color: #61aae2;
+    margin-bottom: 20px;
 }
 
-li#connect{
-    background-color: rgb(219, 76, 155);
-    width: 25%;
-    color: white;
-    text-align: center;
-    padding: 50px 50px 90.49px;
-    box-sizing: border-box;
+.text p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
 
-li#address{
-    background-color: rgb(18, 16, 109);
-    width: 25%;
-    color: white;
-    text-align: center;
-    padding: 50px 12px 70.97px;
-    box-sizing: border-box;
+.text ul {
+    list-style: none;
 }
 
-li#house{
-    background-color: rgb(95, 92, 253);
-    width: 25%;
-    height: 249.23px;
-    line-height: 249.23px;
-    text-align: center;
-
+.text ul li {
+    margin-bottom: 15px;
 }
 
-#contactDiv ul {
-
-    list-style-type: none;
-    padding: 0;
-} 
-
-#contactPage ul li {
-
-    float: left;
-}
-
-#contact img {
-    display: inline-block;
-    height: 20px;
-    margin: 0 15px;
-}
-
-#connect img {
-    display: inline-block;
-    height: 20px;
-    margin: 0 15px;
-
-}
-
-#address img {
-    display: inline-block;
-    height: 20px;
-    margin: 0px;
-
-}
-
-#house img {
- 
-    vertical-align: middle;
-    display: inline-block;
-    height: 95%;
-
-}
-
-
-iframe { 
-
-    margin-top: 0px;
-    width: 100%;
-    height: 600px;
-    clear: left;
-}
-
-.mytext
-    {
-
-     height: 50px;
-     width: 20%;
-     padding: 13px 13px;
-     box-sizing: border-box;
-
-    }
-
-#name{
-    margin-right: 20px;
-}
-
-#email{
-    margin-right: 20px;
-}
-
-
-#form {
-        margin-top: 50px;
-        text-align: center;
-
-    }
-
-#mytextarea {
-
-width: 63.5%;
-margin-top: 30px;
-height: 300px;
-padding: 13px 13px;
-box-sizing: border-box;
-}
-
-#buttoncontainer {
-    text-align: left;
-    margin-bottom: 50px;
-}
-
-#button{
-    background-color: rgb(255, 136, 0);
-    color: white;
-    width: 10%;
-    height: 50px;
-    margin-top: 30px;
-    position: relative;
-    left: 18.2%;
-    top: 0px;
-
-}
-
-
-footer{
-    background-color: #464040;
-
-    color: white;
-    text-align: center;
-}
-
-#navigation {
-
-
-    padding-top: 0px;
-    margin: 0px auto;
-    text-align: center;
-}
-
-footer nav ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 50px auto 20px auto;
-    text-align: center;
-    display: inline-block;
-}
-
-footer nav ul li {
-    list-style-type: none;
-    float: left;
-    padding-left: 25px;
-    text-align: center;
-
-}
-
-.copyright {
-
-    text-align: center;
-    margin: 0px auto 30px auto;
-}
-
-/* RESPONSIVE */
-
-@media all and (min-width: 681px) {
+.text ul li img {
     
-    main article:nth-child(3n) {
-        margin-right: 0;
-    }
+    width: 15px !important;
 }
 
-@media all and (max-width: 680px) {
-
-    main article {
-        width: 49%;
-    }
-
-    main article:nth-child(2n) {
-        margin-right: 0;
-    }
+#wwa img {
+    
+    width: 32%;
+    float: left;
+    margin: 0px 2%;
 }
 
-@media all and (max-width: 520px) {
+#wps {
+    width: 90%;
+    margin: auto auto 5% auto;
+}
 
-    main article {
-        width: 100%;
-        margin: 0;
-    }
+.bluecard {
+    position: relative;
+    float: left;
+    width: 32%;
+    height: 300px;
+    background-color: #82c3f5;
+}
+
+.bluecard h1{
+
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+
+.bluecard img{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 4px;
+    border: 3px solid white;
+}
+
+.bluecard p {
+    color: white;
+    position: absolute;
+    width: 80%;
+    top: 60%;
+    left: 10%;
+    line-height: 30px;
+}
+
+
