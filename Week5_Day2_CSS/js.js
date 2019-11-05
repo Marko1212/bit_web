@@ -97,7 +97,7 @@ function removeItemLocalStorage(d) {
 
 }
 
-function removeAllItems() {
+function removeAllItemsLocalStorage() {
 
     window.localStorage.clear();
 
@@ -105,29 +105,29 @@ function removeAllItems() {
 
 
 
-function storeDataLocalStorage(a, b) {
-    window.localStorage.setItem(a, b);
+function storeDataSessionStorage(a, b) {
+    window.sessionStorage.setItem(a, b);
     console.log(a, b);
 }
 
-function getItemLocalStorage(c) {
+function getItemSessionStorage(c) {
 
-    if (!window.localStorage.getItem(c)) {
+    if (!window.sessionStorage.getItem(c)) {
         console.log("There is no data!");
     }
-    console.log(window.localStorage.getItem(c));
+    console.log(window.sessionStorage.getItem(c));
 
 }
 
-function removeItemLocalStorage(d) {
+function removeItemSessionStorage(d) {
 
-    window.localStorage.removeItem(d);
+    window.sessionStorage.removeItem(d);
 
 }
 
-function removeAllItems() {
+function removeAllItemsSessionStorage() {
 
-    window.localStorage.clear();
+    window.sessionStorage.clear();
 
 }
 
@@ -135,7 +135,7 @@ function removeAllItems() {
 
 /* window.history
 Play around with the browser forward/back navigation.
-Implement a function that navigates two pages back. */
+Implement a function that navigates one page back. */
 
 
 function navigateOnePageBack() {
@@ -151,33 +151,6 @@ Implement a function that navigates two pages back. */
 function navigateOnePageBack() {
     window.history.back();
 }
-
-function storeDataLocalStorage(a, b) {
-    window.localStorage.setItem(a, b);
-    console.log(a, b);
-}
-
-function getItemLocalStorage(c) {
-
-    if (!window.localStorage.getItem(c)) {
-        console.log("There is no data!");
-    }
-    console.log(window.localStorage.getItem(c));
-
-}
-
-function removeItemLocalStorage(d) {
-
-    window.localStorage.removeItem(d);
-
-}
-
-function removeAllItems() {
-
-    window.localStorage.clear();
-
-}
-
 
 
 /* window.history
@@ -219,4 +192,123 @@ greetingMessage("Cao, sta ima!!!");
 promptUse();
 
 
+/* 
 
+Global JavaScript Objects (homework)
+    
+Math
+Random
+Create a function that builds an array of 10 random numbers between 1 and 50.
+The function prints that array out in the console and then returns it.
+        
+*/
+
+function buildRandomElements() {
+
+    var arr = [];
+
+    for (var i = 0; i < 10; i++) {
+        arr[i] = 50 * Math.random();
+    }
+
+    console.log(arr);
+
+    return arr;
+
+
+}
+
+buildRandomElements();
+
+/* Round
+Create a function that uses the passed array of numbers and rounds all its elements to two decimals.
+Print out the modified array in the console.
+Use the first function for generating the input array. */
+
+function roundNumbers(arr) {
+
+    for(var i = 0; i < arr.length; i++) {
+
+        arr[i] = (Math.round((arr[i]*Math.pow(10,2))+(0.0001))/Math.pow(10,2)).toFixed(2);
+
+    }
+
+    return arr;
+
+}
+
+
+console.log(roundNumbers(buildRandomElements()));
+
+/* Floor
+Create a function that uses the passed array of numbers and rounds all its elements to the nearest integer.
+Print out the modified array in the console.
+Use the first function for generating the input array.
+ */
+
+function roundNumbersToNearest(arr) {
+
+    for(var i = 0; i < arr.length; i++) {
+
+        arr[i] = Math.round(arr[i]);
+
+    }
+
+    return arr;
+
+}
+
+console.log(roundNumbersToNearest(buildRandomElements()));
+
+function roundNumbersToNearestBis(arr) {
+
+    for(var i = 0; i < arr.length; i++) {
+
+        arr[i] = Math.floor(arr[i]);
+
+    }
+
+    return arr;
+
+}
+
+console.log(roundNumbersToNearestBis(buildRandomElements()));
+
+/* Max
+Create a function that finds and prints out the biggest element in the passed array of numbers. */
+
+function findMax(arr) {
+
+    var x = Math.max(...arr);
+    console.log(x);
+}
+
+findMax([1, -3, 4, 9, 15]);
+
+/* Date
+    
+Print out the whole date object in the console.
+Print out the current time in the console.
+Print out the current date in the console. */
+
+var dateAndTime = new Date().toLocaleString();
+console.log(dateAndTime);
+
+var time = new Date().toLocaleTimeString();
+console.log(time);
+
+var date = new Date().toLocaleDateString();
+console.log(date);
+
+
+
+
+
+
+
+
+Max
+Create a function that finds and prints out the biggest element in the passed array of numbers.
+    
+
+ */
