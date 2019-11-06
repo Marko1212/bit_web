@@ -132,30 +132,9 @@ function removeAllItemsSessionStorage() {
 }
 
 
-
 /* window.history
 Play around with the browser forward/back navigation.
 Implement a function that navigates one page back. */
-
-
-function navigateOnePageBack() {
-    window.history.back();
-}
-
-
-/* window.history
-Play around with the browser forward/back navigation.
-Implement a function that navigates two pages back. */
-
-
-function navigateOnePageBack() {
-    window.history.back();
-}
-
-
-/* window.history
-Play around with the browser forward/back navigation.
-Implement a function that navigates two pages back. */
 
 
 function navigateOnePageBack() {
@@ -300,15 +279,3 @@ console.log(time);
 var date = new Date().toLocaleDateString();
 console.log(date);
 
-
-
-
-
-
-
-
-Max
-Create a function that finds and prints out the biggest element in the passed array of numbers.
-    
-
- */
