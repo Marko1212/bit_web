@@ -1,3 +1,5 @@
+
+
 /* Selecting One/Multiple Elements
 Create two unordered lists on the page.
     
@@ -24,6 +26,7 @@ function setBackgroundToLiElements() {
     items[i].className = "backgroundElementList";
   }
 }
+*/
 
 /*setBackgroundToLiElements();*/
 /*
