@@ -1,5 +1,3 @@
-
-
 /* Selecting One/Multiple Elements
 Create two unordered lists on the page.
     
