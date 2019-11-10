@@ -18,3 +18,7 @@ function getClickPosition(e) {
     player.style.transform = translate3dValue;
 }
 
+function removeHandler() {
+    document.getElementById("field").removeEventListener("click", getClickPosition);
+  }
+
