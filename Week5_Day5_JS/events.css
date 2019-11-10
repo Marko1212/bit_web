@@ -3,9 +3,11 @@
     color: white;
     
 }
+
 #chatRoom p {
     margin: 60px 0px;
 }
+
 #wrapper {
   
     padding-top: 1px;
@@ -15,11 +17,9 @@
 #wrapper input {
 
    display: block;
-  
    color: white;
    background-color: green;
    
-
 }
 
 .background {
