@@ -17,12 +17,31 @@ $(function () {
 
     for (var i = 0; i < arr.length; i++) {
         arr[i] = $('<img>').attr("src", arr[i]);
-        $("body").append(arr[i]);
+        $("body").append(arr[i]).append("<br><br>");
     }
 
 
-    $("body").before("<h1> Gallery Heading</h1>");
+    $("body").before("<h1> Amazing Gallery</h1>");
 
+    for (var i = 0; i < arr.length; i++) {
+        arr[i].width(Math.random() * 150 + 100);
+        arr[i].height(Math.random() * 350 + 300);
+    }
+
+
+    $("img").each(function () {
+
+        if ($(this).width() > 200) return false;
+
+        $(this).css({
+            "border-color": "red",
+            "border-width": "3px",
+            "border-style": "solid"
+        });
+                    
+            }
+
+        );
 
 
 
