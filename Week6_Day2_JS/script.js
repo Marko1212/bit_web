@@ -14,18 +14,23 @@ $(function () {
         "https://www.stopmandatoryvaccination.com/wp-content/uploads/2015/06/Advertise-300X350.gif",
         "https://www.stopmandatoryvaccination.com/wp-content/uploads/2015/06/Advertise-300X350.gif"];
 
+    var res = [];
+
+    var $body = $("body");
 
     for (var i = 0; i < arr.length; i++) {
-        arr[i] = $('<img>').attr("src", arr[i]);
-        $("body").append(arr[i]).append("<br><br>");
+        res[i] = $('<img>').attr("src", arr[i]);
+        res[i].css("float", "left");
+
+        $body.append(res[i])/* .append("<br><br>") */;
     }
 
 
-    $("body").before("<h1> Amazing Gallery</h1>");
+    $("body").prepend("<h1> Amazing Gallery</h1>");
 
-    for (var i = 0; i < arr.length; i++) {
-        arr[i].width(Math.random() * 150 + 100);
-        arr[i].height(Math.random() * 350 + 300);
+    for (var i = 0; i < res.length; i++) {
+        res[i].width(Math.random() * 150 + 100);
+        /*  res[i].height(Math.random() * 350 + 300); */
     }
 
 
@@ -38,10 +43,10 @@ $(function () {
             "border-width": "3px",
             "border-style": "solid"
         });
-                    
-            }
 
-        );
+    }
+
+    );
 
 
 
