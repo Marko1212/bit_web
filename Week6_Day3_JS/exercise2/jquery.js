@@ -17,7 +17,7 @@ $(function () {
     gallery = $('<div>');
 
     for (var i = 0; i < sourceArray.length; i++) {
-        var widthImage = Math.random() * 500 + 400;
+        var widthImage = Math.random() * 500 + 200;
         image = $("<img>").attr("src", sourceArray[i]).attr("width", widthImage).css("float", "left");
         gallery.append(image);
     };
@@ -30,9 +30,9 @@ $(function () {
     $('img').each(function (i, imageNode) {
         var $img = $(imageNode);
 
-        if ($img.width() > 500) { return false }
+        if ($img.width() > 500) { return false; }
 
-        $img.css("border", "red 3px solid")
+        $img.css("border", "red 3px solid");
     });
 
 })
