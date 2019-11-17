@@ -35,7 +35,7 @@ function groundAnimation(){
 var groundInterval;
 var keyDownFix = false;
 
-function strartAnimation(event){ 
+function startAnimation(event){ 
  
  if(event.key === "ArrowRight" && !keyDownFix){
  keyDownFix = true;
@@ -52,5 +52,5 @@ function stopAnimation(){
 }
 
 var body = document.querySelector("body");
-body.addEventListener("keydown", strartAnimation)
+body.addEventListener("keydown", startAnimation)
 body.addEventListener("keyup", stopAnimation)
