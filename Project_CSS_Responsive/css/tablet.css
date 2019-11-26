@@ -1,6 +1,6 @@
 @font-face{
     font-family: font1; /* ovde definises svoj naziv za font*/
-    src: url(/fonts/Roboto-Regular.ttf);/* a ovde specifiras koji je font u pitanju*/
+    src: url(../fonts/Roboto-Regular.ttf);/* a ovde specifiras koji je font u pitanju*/
 }
 
 
@@ -11,7 +11,7 @@ body{
 
 header{
 
-    background-image: url("/pictures/banner3.jpg");
+    background-image: url("../pictures/banner3.jpg");
     background-size: cover;
     height: 900px;
 
@@ -165,7 +165,7 @@ nav ul li a{ /*uvek treba da su linkovi deo menija inace nece moci da se klikne 
 }
 
 .main1 ul{
-    list-style-image: url(/pictures/arrow_bullet.png); 
+    list-style-image: url(../pictures/arrow_bullet.png); 
     padding-left: 15px;
     width: 95%;
 
