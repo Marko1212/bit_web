@@ -200,9 +200,6 @@ nav ul li a{ /*uvek treba da su linkovi deo menija inace nece moci da se klikne 
     padding: 35px;
 }
 
-
-
-
 #secondUnder ul {
 
     list-style-type: none;
@@ -282,7 +279,7 @@ li#house{
 
 }
 
-#contactDiv ul {
+#contactDiv>ul {
 
     list-style-type: none;
     padding: 0;
