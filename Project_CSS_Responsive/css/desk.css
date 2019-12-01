@@ -243,6 +243,8 @@ nav ul li a{ /*uvek treba da su linkovi deo menija inace nece moci da se klikne 
 li#contact{
     background-color: rgb(39, 216, 134);
     width: 25%;
+    height: 249.23px;
+    line-height: 249.23px;
     color: white;
     text-align: center;
     padding: 50px 45px;
@@ -252,6 +254,8 @@ li#contact{
 li#connect{
     background-color: rgb(219, 76, 155);
     width: 25%;
+    height: 249.23px;
+    line-height: 249.23px;
     color: white;
     text-align: center;
     padding: 50px 50px 90.49px;
@@ -261,6 +265,8 @@ li#connect{
 li#address{
     background-color: rgb(18, 16, 109);
     width: 25%;
+    height: 249.23px;
+    line-height: 249.23px;
     color: white;
     text-align: center;
     padding: 50px 12px 70.97px;
