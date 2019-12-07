@@ -57,7 +57,7 @@ nav ul li a{ /*uvek treba da su linkovi deo menija inace nece moci da se klikne 
     color: white;
     position: absolute;
     top: 50%;
-    -ms-transform: translateY(-50%);
+    
     transform: translateY(-50%);
     font-size: 47px;
     text-align: center;
@@ -160,7 +160,7 @@ nav ul li a{ /*uvek treba da su linkovi deo menija inace nece moci da se klikne 
 }
 
 .main1 ul{
-    list-style-image: url(../pictures/arrow_bullet.png);
+    list-style-image: url("../pictures/arrow_bullet.png");
     padding-left: 15px;
     width: 95%;
 
@@ -241,7 +241,7 @@ li#contact{
     background-color: rgb(39, 216, 134);
     width: 25%;
     height: 249.23px;
-    line-height: 249.23px;
+    /*line-height: 249.23px;*/
     color: white;
     text-align: center;
     padding: 50px 45px;
@@ -252,7 +252,7 @@ li#connect{
     background-color: rgb(219, 76, 155);
     width: 25%;
     height: 249.23px;
-    line-height: 249.23px;
+    /*line-height: 249.23px;*/
     color: white;
     text-align: center;
     padding: 50px 50px 90.49px;
@@ -263,7 +263,7 @@ li#address{
     background-color: rgb(18, 16, 109);
     width: 25%;
     height: 249.23px;
-    line-height: 249.23px;
+    /*line-height: 249.23px;*/
     color: white;
     text-align: center;
     padding: 50px 12px 70.97px;
@@ -274,7 +274,7 @@ li#house{
     background-color: rgb(95, 92, 253);
     width: 25%;
     height: 249.23px;
-    line-height: 249.23px;
+    /*line-height: 249.23px;*/
     text-align: center;
 
 }
