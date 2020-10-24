@@ -132,6 +132,7 @@ nav ul li a {
   display: block;
   width: 100%;
   margin-top: 21.28px;
+  height: 400px;
 }
 
 .main1 h3 {
@@ -218,7 +219,7 @@ li#contact {
   width: 50%;
   color: white;
   text-align: center;
-  padding: 50px 45px;
+  padding: 25px 45px;
   height: 249.23px;
   box-sizing: border-box;
 }
@@ -228,7 +229,7 @@ li#connect {
   width: 50%;
   color: white;
   text-align: center;
-  padding: 50px 50px 90.49px;
+  padding: 25px 50px;
   height: 249.23px;
   box-sizing: border-box;
 }
@@ -239,7 +240,7 @@ li#address {
   color: white;
   text-align: center;
   height: 249.23px;
-  padding: 50px 12px 70.97px;
+  padding: 25px 12px;
   box-sizing: border-box;
 }
 
@@ -254,10 +255,6 @@ li#house {
 #contactDiv ul {
   list-style-type: none;
   padding: 0;
-}
-
-#contactPage ul li {
-  float: left;
 }
 
 #contact img {
@@ -366,4 +363,9 @@ footer div {
 .copyright {
   text-align: center;
   margin: 0px auto 30px auto;
+}
+
+
+.clear {
+  clear: both;
 }
